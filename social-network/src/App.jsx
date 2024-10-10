@@ -1,33 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Bar } from './components/bar/bar'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const logan = "https://media.discordapp.net/attachments/1292994825309782032/1293628760079204382/IMG-20241008-WA00181.jpg?ex=6708112a&is=6706bfaa&hm=e4d4c57a6a291de412cc0d98b3f375d521e2e003d3d96d7cf29e5c91fc8f5280&=&format=webp&width=526&height=376";
+  const slogan = "Social Media";
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Bar
+      logo={logan}
+      slogan={slogan}
+      ></Bar>
     </>
   )
 }
