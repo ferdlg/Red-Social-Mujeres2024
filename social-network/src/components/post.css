@@ -1,0 +1,42 @@
+.post {
+    background-color: #f7f7f7; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin: 20px 0; 
+    transition: transform 0.3s; 
+}
+
+
+.post:hover {
+    transform: translateY(-5px); 
+}
+
+
+.post-title {
+    font-size: 1.5rem; 
+    color: #6b0f9c; 
+    margin-bottom: 10px; 
+}
+
+
+.post-content {
+    font-size: 1rem; 
+    color: #333; 
+    line-height: 1.6; 
+}
+
+
+.post-footer {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 20px; 
+}
+
+
+.post-likes,
+.post-shares {
+    font-size: 0.9rem; 
+    color: #008cba; 
+    font-weight: bold; 
+}
