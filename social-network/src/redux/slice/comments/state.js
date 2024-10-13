@@ -4,5 +4,5 @@ export default {
         type:'success'
     },
     condition: 'no init',
-    coments:[]
+    comments:[]
 }

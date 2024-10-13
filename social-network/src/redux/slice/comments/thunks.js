@@ -1,8 +1,8 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { ACTIONSCOMENTS } from "./types";
+import { ACTIONSCOMMENTS } from "./types";
 
 export const thunks = {
-    [ACTIONSCOMENTS.FETCH_COMENTS]: createAsyncThunk({id},'coments/fetchComents', async()=>{
+    [ACTIONSCOMMENTS.FETCH_COMMENTS]: createAsyncThunk({id},'comments/fetchcomments', async()=>{
         const response = await fetch(`https://jsonplaceholder.typicode.com/comments?postId=`+{id});
         return response.json();
     }),

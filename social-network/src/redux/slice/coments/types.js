@@ -1,4 +1,0 @@
-export const ACTIONSCOMENTS = {
-        SET_STATUS: 'SET_STATUS',
-        FETCH_COMENTS: 'FETCH_COMENTS'
-};

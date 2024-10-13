@@ -1,10 +1,10 @@
 import {configureStore} from '@reduxjs/toolkit';
 import  postSlice  from './slice/posts/slice';
-import { comentSlice } from './slice/coments/slice';
+import commentSlice from './slice/comments/slice';
 
 export const store = configureStore({
-    reducers:{
+    reducer:{
         post: postSlice,
-        coment : comentSlice
+        comment : commentSlice
     }
 });

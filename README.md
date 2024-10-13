@@ -12,7 +12,7 @@
     <li><strong>React</strong>: Para construir la interfaz de usuario.</li>
     <li><strong>Redux</strong>: Para gestionar el estado de la aplicación de manera eficiente.</li>
     <li><strong>Reducers</strong>: Para manejar la lógica de estado de forma estructurada.</li>
-    <li><strong>Consumo Múltiple de API</strong>: Para obtener y gestionar los post y comentarios.</li>
+    <li><strong>Consumo Múltiple de API</strong>: Para obtener y gestionar los post y commentarios.</li>
     <li><strong>Diseño Personalizado</strong>: Hemos creado un diseño único para mejorar la experiencia del usuario.</li>
     <li><strong>Figma</strong>: Diseñar la interfaz</li>
     <li><strong>Metodología Scrum</strong></li>
