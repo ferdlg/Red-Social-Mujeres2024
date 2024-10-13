@@ -3,11 +3,11 @@
     <img src="https://y.yarn.co/7e9d9c97-163e-4351-a81a-ea953d32220b_text.gif" width="30%" alt="Mean Girls">
 </div>
 
-<h2 align="center">Objetivo</h2>
+<h2 align="center">Objetivo 🔭</h2>
 <p>Desarrollar una plataforma de microblogging como red social, utilizando la biblioteca React y fomentando la colaboración efectiva en equipo.</p>
 
 
-<h2 align="center">Tecnologías Utilizadas</h2>
+<h2 align="center">Tecnologías Utilizadas 🧚🏽</h2>
 <ul>
     <li><strong>React</strong>: Para construir la interfaz de usuario.</li>
     <li><strong>Redux</strong>: Para gestionar el estado de la aplicación de manera eficiente.</li>
@@ -17,6 +17,15 @@
     <li><strong>Figma</strong>: Diseñar la interfaz</li>
     <li><strong>Metodología Scrum</strong></li>
 </ul>
+
+<h2 align="center">🎉 ¡Pon la App a funcionar! 🚀</h2>
+<h3>Pasos para comenzar:</h3>
+<ol>
+    <li>📥 Clona el proyecto copiando la URL.</li>
+    <li>💻 Abre tu terminal y ejecuta <code>npm i</code> para instalar las dependencias.</li>
+    <li>⚡ Corre la app usando el comando <code>npm run dev</code>.</li>
+    <li>🔗 Da clic en el enlace que te aparece en la consola y ¡listo!</li>
+</ol>
 
 <br />
 
