@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaThumbsUp, FaComment, FaShare } from 'react-icons/fa'; 
-import '../assets/styles/post.css'; 
+import '../../assets/styles/components/post.css'; 
 
 const Post = ({ userId, id, title, body, likes, shares }) => {
   return (
@@ -15,19 +15,15 @@ const Post = ({ userId, id, title, body, likes, shares }) => {
       <h2 className="post__title">{title}</h2>
       <p className="post__body">{body}</p>
       <div className="post__image-placeholder"></div>
-      <div className="post__stats">
-        <span className="post__likes">Likes: {likes}</span>
-        <span className="post__shares">Shares: {shares}</span>
-      </div>
       <div className="post__actions">
         <button className="post__action-button">
-          <FaThumbsUp /> Me Gusta
+          <FaThumbsUp /> Likes  {likes}
         </button>
         <button className="post__action-button">
-          <FaComment /> Comentar
+          <FaComment /> Comments
         </button>
         <button className="post__action-button">
-          <FaShare /> Compartir
+          <FaShare /> Shares  {shares}
         </button>
       </div>
     </div>
