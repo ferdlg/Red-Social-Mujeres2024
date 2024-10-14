@@ -1,9 +1,11 @@
 import React from 'react';
 import { FaThumbsUp, FaComment, FaShare } from 'react-icons/fa'; 
 import '../../assets/styles/components/post.css'; 
+import { Card } from '../card/card';
 
 const Post = ({ userId, id, title, body, likes, shares }) => {
   return (
+    <Card>
     <div className="post" data-user-id={userId} data-id={id}>
       <div className="post__header">
         <img className="post__avatar" src="avatar.png" alt="User Avatar" />
@@ -27,6 +29,7 @@ const Post = ({ userId, id, title, body, likes, shares }) => {
         </button>
       </div>
     </div>
+    </Card>
   );
 };
 
