@@ -1,0 +1,63 @@
+.sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh; 
+    position: fixed; 
+  }
+  
+  .card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px; 
+  }
+  
+  .nav-item:hover {
+    background-color: #e2e6ea; 
+  }
+  
+  .nav-icon {
+    margin-right: 10px; 
+    font-size: 18px;
+    color: #4a4a4a; 
+  }
+  
+  .nav-item span {
+    font-size: 16px;
+    color: #4a4a4a; 
+  }
+  
+  .trending-section {
+    border-top: 1px solid #dee2e6; 
+    padding-top: 1rem;
+  }
+  
+  .trending-section h3 {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    color: #4a4a4a;
+  }
+  
+  .trending-section ul {
+    list-style-type: none; 
+    padding: 0; 
+  }
+  
+  .trending-section li {
+    margin: 5px 0; 
+    color: #007bff; /* Color de los hashtags */
+    cursor: pointer;
+  }
+  
+  .trending-section li:hover {
+    text-decoration: underline; 
+  }
+  

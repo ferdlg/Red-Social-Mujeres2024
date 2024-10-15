@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Hexagon shape -->
+  <polygon points="100,10 170,50 170,130 100,170 30,130 30,50" fill="#4E5EAA"/>
+
+  <!-- Interlaced bands -->
+  <path d="M60,50 L140,50 C150,60 150,80 140,90 L60,90 C50,80 50,60 60,50 Z" fill="#29C9D8"/>
+  <path d="M140,50 L170,80 C160,90 140,90 130,80 L130,60 C140,50 150,50 140,50 Z" fill="#FC7753"/>
+  <path d="M60,110 L140,110 C150,120 150,140 140,150 L60,150 C50,140 50,120 60,110 Z" fill="#F542B8"/>
+
+  <!-- Center hole -->
+  <circle cx="100" cy="100" r="20" fill="white"/>
+
+  <!-- Small dots for texture -->
+  <circle cx="85" cy="85" r="2" fill="#DADADA"/>
+  <circle cx="115" cy="115" r="2" fill="#DADADA"/>
+  <circle cx="125" cy="85" r="2" fill="#DADADA"/>
+  <circle cx="75" cy="115" r="2" fill="#DADADA"/>
+</svg>
