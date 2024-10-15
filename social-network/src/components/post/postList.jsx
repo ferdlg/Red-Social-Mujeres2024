@@ -41,8 +41,8 @@ const PostList = ()=>{
                     userId = {post.userId}
                     title = {post.title}
                     body = {post.body}
-                    likes = {0}
-                    shares = {0}
+                    likes = {Math.floor(Math.random()*(500 - 100)+100)}
+                    shares = {Math.floor(Math.random()*(1000 - 100)+1000)}
                     />
                 ))}
             </div>

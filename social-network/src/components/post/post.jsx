@@ -11,17 +11,16 @@ const Post = ({ userId, id, title, body, likes, shares }) => {
 
   return (
     <Card>
-    <div className="post" data-user-id={userId} data-id={id}>
+    <div className="post" key={id}>
       <div className="post__header">
         <img className="post__avatar" src="avatar.png" alt="User Avatar" />
         <div className="post__user-info">
-          <h3 className="post__username">Friendly User</h3>
+          <h3 className="post__username">Friendly User {userId}</h3>
           <h5 className="post__timestamp">2 hours ago</h5>
         </div>
       </div>
       <h2 className="post__title">{title}</h2>
       <p className="post__body">{body}</p>
-      <div className="post__image-placeholder"></div>
       <div className="post__actions">
         <button className="post__action-button">
           <FaThumbsUp /> Likes  {likes}
