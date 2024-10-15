@@ -1,0 +1,30 @@
+.container__title , .container,  .container__list , .container__text-area{
+    display: flex;
+}
+
+.container__title{
+    align-self: flex-start;
+    margin-bottom: 1rem;
+}
+.container__title-comments{
+    font-size: 1.2rem;
+}
+.container{
+    justify-content: flex-start;
+    padding: 0.5rem;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    margin-bottom: 1rem;
+}
+.container__list{
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+}
+.container__list-comment{
+    font-size: 0.9rem;
+    color: rgb(58, 58, 58);
+}
+
+.container__text-area{
+    justify-items: flex-start;
+}

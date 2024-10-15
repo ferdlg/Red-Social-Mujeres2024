@@ -1,20 +1,16 @@
-import React from "react";
-import Header from "./components/layout/header";
-import Sidebar from "./components/layout/sidebar";
-import Footer from "./components/layout/footer";
-import MainContent from "./components/layout/mainContent";
-import "./App.css";
+import { useState } from 'react'
+import { Bar } from './components/bar/bar'
+import { Page } from './pages/page';
+import './assets/styles/components/post.css';  
+import './App.css'
+import { useSelector } from 'react-redux'
 
-const App = () => {
+function App() {
   return (
-    <div className="app-container">
-      <Header />
-      <div className="main-layout">
-        <Sidebar />
-        <MainContent />
-      </div>
-      <Footer />
-    </div>
+    <>
+      <Page></Page>
+    
+    </>
   );
 };
 

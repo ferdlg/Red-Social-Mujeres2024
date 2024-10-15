@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import'./App.css';
 
 :root{
-  /* Variables de colores principales */
+  --color-blue-dark:#4281B9;
+  --color-blue-light:#2FB8D1;
+  --color-fuchsia: #F542B8;
+  --color-blue-king:#4E5EAA;
+  font-family: "Open+Sans", sans-serif;
+  color: var(--color-blue-king);
 }
 
 body{
@@ -9,4 +15,5 @@ body{
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background:linear-gradient(135deg,var(--color-blue-dark), var(--color-blue-light));
 }

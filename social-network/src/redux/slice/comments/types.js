@@ -1,0 +1,4 @@
+export const ACTIONSCOMMENTS = {
+        SET_STATUS: 'SET_STATUS',
+        FETCH_COMMENTS: 'FETCH_COMMENTS'
+};

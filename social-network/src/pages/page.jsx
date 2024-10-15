@@ -1,16 +1,11 @@
 import React from "react";
-import Post from "../components/post/post";
+import Comments from "../components/comments/comments"
+import PostList  from "../components/post/postList";
 
 export const Page = ()=>{
-    const examplePost = {
-        title: 'Título de la Publicación',
-        content: 'Contenido de la publicación aquí...',
-        likes: 42,
-        shares: 10,
-      };
     return(
-        <Post
-        post = {examplePost}
-        ></Post>
+        <div>
+            <PostList></PostList>
+        </div>
     );
 }

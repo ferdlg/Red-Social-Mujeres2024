@@ -19,13 +19,11 @@
 
 .post__username {
     font-weight: bold;
-    font-size: 18px;
-    color: #333;
 }
 
 .post__timestamp {
-    font-size: 13px;
     color: #888;
+    font-weight: lighter;
 }
 
 
@@ -75,7 +73,7 @@
 .post__action-button {
     background: none;
     border: none;
-    color: #007bff;
+    color: var(--color-blue-king);
     cursor: pointer;
     font-size: 16px;
     display: flex;
