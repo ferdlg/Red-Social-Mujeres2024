@@ -5,8 +5,15 @@
   text-align: center;
 }
 
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
 }

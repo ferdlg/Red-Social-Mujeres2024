@@ -8,8 +8,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: calc(100% - 250px);
-  margin-left: 250px;
+  width: 100%; 
   z-index: 1000;
 }
 
@@ -35,7 +34,7 @@
 }
 
 .icon {
-  color: #fc7753;
+  color: #ff69b4;
   font-size: 24px;
   cursor: pointer;
   transition: color 0.3s;
@@ -43,4 +42,25 @@
 
 .icon:hover {
   color: #555;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+    width: 100%; 
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  .nav-icons .icon {
+    font-size: 20px;
+  }
+}
+
+/* Asegura espacio suficiente para el contenido debajo del header */
+main {
+  padding-top: 70px; 
 }

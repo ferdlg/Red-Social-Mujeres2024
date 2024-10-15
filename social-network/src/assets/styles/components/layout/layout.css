@@ -1,100 +1,29 @@
-.main-content {
-    margin-left: 250px;
-    padding: 20px;
-    width: calc(100% - 250px);
-    box-sizing: border-box;
-  }
-  
-  .post-input {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .post-input input {
-    flex-grow: 1;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    margin-right: 10px;
-  }
-  
-  .post-input button {
-    background-color: #ff69b4;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  .post-input button:hover {
-    background-color: #ff4081;
-  }
-  
-  .post {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .user-info {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .user-avatar {
-    width: 40px;
-    height: 40px;
-    background-color: #ddd;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .user-name {
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  
-  .post-time {
-    color: #888;
-  }
-  
-  .post-content {
-    margin-bottom: 10px;
-  }
-  
-  .hashtags {
-    color: #ff6347;
-  }
-  
-  .post-image-placeholder {
-    width: 100%;
-    height: 200px;
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-  
-  .post-actions {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .post-actions button {
-    background: none;
-    border: none;
-    color: #888;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .post-actions button:hover {
-    color: #ff4081;
-  }
-  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.sidebar {
+  width: 250px; 
+  padding: 20px;
+  position: fixed; /* Fija la sidebar */
+  height: 100%;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+main {
+  margin-left: 250px; /* Compensar el ancho de la sidebar */
+  padding: 20px;
+  background-color: transparent; /* Mantener el fondo transparente */
+  min-height: 100vh; /* Altura mínima del contenedor */
+}
+
+
+.layout {
+  background: none; /* Elimina cualquier fondo adicional */
+}

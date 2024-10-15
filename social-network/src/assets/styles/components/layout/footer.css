@@ -3,10 +3,9 @@
   padding: 20px;
   background-color: #fff;
   border-top: 1px solid #ddd;
-  width: calc(100% - 250px);
-  margin-left: 250px;
-  position: fixed;
-  bottom: 0;
+  width: 100%; 
+  position: relative; 
+  bottom: 0; 
   color: #4a4a4a;
   box-sizing: border-box;
 }

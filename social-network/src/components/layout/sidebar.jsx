@@ -5,7 +5,7 @@ import { FaHome, FaUsers, FaBookmark } from "react-icons/fa";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <div className="card">
+      <div className="card nav-card"> {/* Añadido la clase nav-card */}
         <div className="nav-item">
           <FaHome className="nav-icon" />
           <span>Home</span>
@@ -19,7 +19,7 @@ const Sidebar = () => {
           <span>Guardado</span>
         </div>
       </div>
-      <div className="trending-section">
+      <div className="card trending-card"> {/* Añadido la clase trending-card */}
         <h3>Trending Topics</h3>
         <ul>
           <li>#FriendoLife</li>
