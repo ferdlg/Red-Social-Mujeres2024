@@ -10,8 +10,8 @@ const Post = ({ userId, id, title, body, likes, shares }) => {
       <div className="post__header">
         <img className="post__avatar" src="avatar.png" alt="User Avatar" />
         <div className="post__user-info">
-          <span className="post__username">Friendly User</span>
-          <span className="post__timestamp">2 hours ago</span>
+          <h3 className="post__username">Friendly User</h3>
+          <h5 className="post__timestamp">2 hours ago</h5>
         </div>
       </div>
       <h2 className="post__title">{title}</h2>

@@ -1,6 +1,6 @@
 import React from "react";
 import Post from "../components/post/post";
-
+import Comments from "../components/comments/comments"
 export const Page = ()=>{
     const examplePost = {
         title: 'Título de la Publicación',
@@ -9,8 +9,11 @@ export const Page = ()=>{
         shares: 10,
       };
     return(
-        <Post
-        post = {examplePost}
-        ></Post>
+        <div>
+            <Post
+            post = {examplePost}
+            ></Post>
+            <Comments></Comments>
+        </div>
     );
 }

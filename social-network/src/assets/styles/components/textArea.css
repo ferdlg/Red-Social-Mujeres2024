@@ -1,0 +1,11 @@
+.content__form-text-area{
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+.content__form-add-comment{
+    background-color: var(--color-fuchsia);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 50%;
+}
