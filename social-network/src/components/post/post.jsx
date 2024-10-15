@@ -2,20 +2,22 @@ import React, { useState } from 'react';
 import { FaThumbsUp, FaComment, FaShare } from 'react-icons/fa'; 
 import '../../assets/styles/components/post.css'; 
 import { Card } from '../card/card';
+import CommentList from '../comments/commentList';
 
 const Post = ({ userId, id, title, body, likes, shares }) => {
-  const [comment, setComment] = useState(false);
+  const [showComment, setShowComment] = useState(false);
   const handleOpenComment = ()=>{
-    
+    setShowComment(!showComment);
   }
 
   return (
+    <>
     <Card>
     <div className="post" key={id}>
       <div className="post__header">
         <img className="post__avatar" src="avatar.png" alt="User Avatar" />
         <div className="post__user-info">
-          <h3 className="post__username">Friendly User {userId}</h3>
+          <h3 className="post__username">Friendly User {userId} postId = {id} </h3>
           <h5 className="post__timestamp">2 hours ago</h5>
         </div>
       </div>
@@ -25,7 +27,7 @@ const Post = ({ userId, id, title, body, likes, shares }) => {
         <button className="post__action-button">
           <FaThumbsUp /> Likes  {likes}
         </button>
-        <button className="post__action-button">
+        <button className="post__action-button" onClick={handleOpenComment}>
           <FaComment /> Comments
         </button>
         <button className="post__action-button">
@@ -34,6 +36,13 @@ const Post = ({ userId, id, title, body, likes, shares }) => {
       </div>
     </div>
     </Card>
+    {showComment && 
+    <Card>
+      <CommentList postId={id}/>
+    </Card>
+    }
+    </>
+    
   );
 };
 

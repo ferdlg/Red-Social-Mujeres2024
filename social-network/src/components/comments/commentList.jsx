@@ -1,23 +1,29 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {useSelector, useDispatch} from "react-redux";
 import { ACTIONSCOMMENTS } from "../../redux/slice/comments/types.js";
-
-import { thunks } from "../../redux/slice/coments/thunk.js";
-
+import { thunks } from "../../redux/slice/comments/thunks.js";
+import Comments from "./comments.jsx";
+import { TextArea } from "./textArea.jsx";
 
 const CommentList = ({postId})=>{
     const dispatch = useDispatch();
     const comments = useSelector((state) => state.comment.comments);
 
     useEffect(()=>{
-        dispatch(thunks[ACTIONSPOST.FETCH_POST](postId));
+        dispatch(thunks[ACTIONSCOMMENTS.FETCH_COMMENTS](postId));
     }, [dispatch]);
+    console.log(comments);
     return(
+        <>
+        <div className="container__title">
+                <h1 className="container__title-comments">Comments</h1>
+        </div>
         <div className="comment__list">
             <div className="comment__list-item">
                 {comments.map(comment =>(
-                    <Post
-                    key = {comment.Id}
+                    <Comments
+                    key = {comment.id}
+                    id = {comment.id}
                     postId = {comment.postId}
                     name = {comment.name}
                     email = {comment.email}
@@ -25,7 +31,12 @@ const CommentList = ({postId})=>{
                     />
                 ))}
             </div>
+            <div className="container__text-area">
+                <TextArea></TextArea>
+            </div>
         </div>
+        </>
+        
     );
 
 }

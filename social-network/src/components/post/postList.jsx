@@ -37,7 +37,8 @@ const PostList = ()=>{
             <div className="post__list-item">
                 {paginationPost.map(post =>(
                     <Post
-                    key = {post.Id}
+                    key = {post.id}
+                    id = {post.id}
                     userId = {post.userId}
                     title = {post.title}
                     body = {post.body}
