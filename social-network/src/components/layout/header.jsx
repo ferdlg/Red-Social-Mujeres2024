@@ -1,6 +1,6 @@
 import React from "react";
-import "./../../assets/styles/layout/header.css";
-import logo from "./../../assets/imagenes/logoxd.svg";
+import "../../assets/styles/components/layout/header.css";
+import logo from "./../../assets/images/logoxd.svg";
 import { FaBell, FaUserCircle } from "react-icons/fa";
 
 const Encabezado = () => {

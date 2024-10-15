@@ -1,5 +1,5 @@
 import React from 'react';
-import "./../../assets/styles/layout/layout.css";
+import "../../assets/styles/components/layout/layout.css";
 
 const MainContent = () => {
   return (

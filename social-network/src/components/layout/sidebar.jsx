@@ -1,5 +1,5 @@
 import React from "react";
-import "./../../assets/styles/layout/sidebar.css";
+import "../../assets/styles/components/layout/sidebar.css";
 import { FaHome, FaUsers, FaBookmark } from "react-icons/fa";
 
 const Sidebar = () => {
