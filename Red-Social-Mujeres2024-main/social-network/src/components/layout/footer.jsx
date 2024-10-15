@@ -4,7 +4,7 @@ import "./../../assets/styles/layout/footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© 2024 Friendo. All rights reserved.</p>
+      <p>© 2024 Friendo. Todos los derechos reservados.</p>
     </footer>
   );
 };
