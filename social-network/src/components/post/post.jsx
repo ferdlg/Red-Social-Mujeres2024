@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaThumbsUp, FaComment, FaShare } from 'react-icons/fa'; 
 import '../../assets/styles/components/post.css'; 
 import { Card } from '../card/card';
 
 const Post = ({ userId, id, title, body, likes, shares }) => {
+  const [comment, setComment] = useState(false);
+  const handleOpenComment = ()=>{
+    
+  }
+
   return (
     <Card>
     <div className="post" data-user-id={userId} data-id={id}>
