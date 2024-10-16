@@ -1,0 +1,4 @@
+export const ACTIONSPOST = {
+    SET_STATUS: 'SET_STATUS',
+    FETCH_POST: 'FETCH_POST'
+};

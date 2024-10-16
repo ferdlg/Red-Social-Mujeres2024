@@ -1,0 +1,15 @@
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    margin-top: 20px;
+    width: 100%; 
+    max-width: 600px; 
+    transition: transform 0.2s ease-in-out; 
+  }
+  
+  .card:hover {
+    transform: scale(1.02); 
+  }
+  
