@@ -46,7 +46,7 @@
 }
 
 .trending-section {
-  border-top: 1px solid #dee2e6; /* Añadir separación entre las tarjetas */
+  border-top: 1px solid #dee2e6; 
   padding-top: 1rem;
 }
 
@@ -71,7 +71,7 @@
   text-decoration: underline;
 }
 
-/* Media queries para pantallas más pequeñas */
+
 @media (max-width: 768px) {
   .sidebar {
     width: 100%;
@@ -83,7 +83,7 @@
 
   .card {
     width: 100%;
-    max-width: none; /* Para pantallas pequeñas, dejar que ocupe todo el ancho */
+    max-width: none; 
   }
 
   .nav-item {

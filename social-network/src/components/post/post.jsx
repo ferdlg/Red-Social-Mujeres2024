@@ -3,6 +3,7 @@ import { FaThumbsUp, FaComment, FaShare } from 'react-icons/fa';
 import '../../assets/styles/components/post.css'; 
 import { Card } from '../card/card';
 import CommentList from '../comments/commentList';
+import avatar from '../../assets/images/avatar.png'
 
 const Post = ({ userId, id, title, body, likes, shares }) => {
   const [showComment, setShowComment] = useState(false);
@@ -15,7 +16,7 @@ const Post = ({ userId, id, title, body, likes, shares }) => {
     <Card>
     <div className="post" key={id}>
       <div className="post__header">
-        <img className="post__avatar" src="avatar.png" alt="User Avatar" />
+        <img className="post__avatar" src={avatar} alt="User Avatar" />
         <div className="post__user-info">
           <h3 className="post__username">Friendly User : {userId} </h3>
         </div>

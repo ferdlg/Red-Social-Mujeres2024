@@ -1,6 +1,8 @@
 import React from "react";
 import {LuSend } from 'react-icons/lu'; 
 import '../../assets/styles/components/textArea.css'
+import '../../assets/styles/components/comments.css'
+
 
 export const TextArea = ()=>{
     return(

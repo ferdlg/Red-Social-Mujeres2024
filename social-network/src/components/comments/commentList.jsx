@@ -4,6 +4,7 @@ import { ACTIONSCOMMENTS } from "../../redux/slice/comments/types.js";
 import { thunks } from "../../redux/slice/comments/thunks.js";
 import Comments from "./comments.jsx";
 import { TextArea } from "./textArea.jsx";
+import '../../assets/styles/components/comments.css'
 
 const CommentList = ({postId})=>{
     const dispatch = useDispatch();
