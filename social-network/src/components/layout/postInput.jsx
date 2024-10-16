@@ -1,13 +1,24 @@
-import React from "react";
-import "../../assets/styles/components/layout/postInput.css";
+import React, { useState } from 'react';
+import '../../assets/styles/components/layout/postInput.css';
 
-const PostInput = () => {
+const PostInput = ({ onPost }) => {
+  const [postText, setPostText] = useState('');
+
+  const handlePost = () => {
+    if (postText.trim()) {
+      onPost(postText);
+      setPostText('');
+    }
+  };
+
   return (
-    <div className="main-content">
-      <div className="post-input">
-        <input type="text" placeholder="¿Qué tienes en mente, amigo?" />
-        <button>Publicar</button>
-      </div>
+    <div className="post-input">
+      <textarea
+        value={postText}
+        onChange={(e) => setPostText(e.target.value)}
+        placeholder="¿Qué estás pensando?"
+      />
+      <button onClick={handlePost}>Publicar</button>
     </div>
   );
 };

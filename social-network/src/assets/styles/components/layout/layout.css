@@ -1,29 +1,56 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.layout {
+  display: flex;
+  min-height: 100vh; 
+}
+
+
+.layout__content {
+  display: flex;
+  flex: 1; 
+}
 
 
 .sidebar {
   width: 250px; 
-  padding: 20px;
-  position: fixed; /* Fija la sidebar */
-  height: 100%;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem; 
+  color: #333; 
+  border-right: 1px solid #e0e0e0; 
+  height: calc(100vh - 70px); 
+  position: fixed; 
+  top: 70px; 
+  left: 0; 
+  z-index: 999;
 }
 
 
-main {
-  margin-left: 250px; /* Compensar el ancho de la sidebar */
-  padding: 20px;
-  background-color: transparent; /* Mantener el fondo transparente */
-  min-height: 100vh; /* Altura mínima del contenedor */
+.layout__main {
+  flex: 1; 
+  padding: 20px; 
+  margin-left: 250px; 
+  overflow-y: auto; 
 }
 
 
-.layout {
-  background: none; /* Elimina cualquier fondo adicional */
+.posts-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px 0; 
+}
+
+/* Estilo de cada post */
+.post {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Ancho máximo del post */
+    width: 100%; /* Ancho del post ocupa el 100% disponible */
 }

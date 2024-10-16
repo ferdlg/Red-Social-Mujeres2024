@@ -1,22 +1,22 @@
 .sidebar {
-  width: 250px; /* Mantener el sidebar en 250px de ancho */
+  width: 250px; 
   padding: 1rem;
-  box-shadow: none; /* Sin sombra para evitar el efecto de columna */
-  height: calc(100vh - 70px); /* Altura total menos la del header */
+  box-shadow: none; 
+  height: calc(100vh - 70px); 
   position: fixed;
   left: 0;
-  top: 70px; /* Ajustar para que comience debajo del header */
+  top: 70px; 
   z-index: 999;
   display: flex;
-  flex-direction: column; /* Alinear tarjetas verticalmente */
-  gap: 1.5rem; /* Espacio entre tarjetas */
+  flex-direction: column; 
+  gap: 1.5rem; 
 }
 
 .card {
-  width: 100%; /* Asegura que la card ocupe el 100% del ancho del sidebar */
-  max-width: 230px; /* Añade un ancho máximo si es necesario reducir el tamaño */
-  padding: 1rem; /* Aumenta el padding para mayor espacio interno */
-  background-color: #fff; /* Asegura que la card tenga un fondo blanco */
+  width: 100%; 
+  max-width: 230px; 
+  padding: 1rem; 
+  background-color: #fff; 
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
