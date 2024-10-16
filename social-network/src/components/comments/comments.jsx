@@ -1,6 +1,5 @@
 import React from "react";
-import { Card } from "../card/card";
-import { TextArea } from "./textArea";
+
 import '../../assets/styles/components/comments.css'
 
 const Comments = ({id,name, email, body})=>{
@@ -10,7 +9,7 @@ const Comments = ({id,name, email, body})=>{
                 <ul className="container__list">
                     <li className="container__list-avatar"></li>
                     <li className="container__list-username">
-                        <p>username{email}</p>
+                        <p>{email}</p>
                     </li>
                     <li>
                         <p>{name}</p>

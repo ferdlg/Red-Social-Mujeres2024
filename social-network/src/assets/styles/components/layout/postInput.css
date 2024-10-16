@@ -1,6 +1,6 @@
 .main-content {
-  margin-left: 250px; /* Mantiene el margen a la izquierda para el sidebar */
-  padding: 80px 20px 20px; /* Añade padding superior para distanciar del header */
+  margin-left: 250px; 
+  padding: 80px 20px 20px; 
   width: calc(100% - 250px);
   max-width: 1200px; 
   box-sizing: border-box;
