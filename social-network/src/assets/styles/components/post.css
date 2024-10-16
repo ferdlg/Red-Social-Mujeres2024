@@ -96,7 +96,7 @@
 }
 
 .post__action-button:hover {
-    color: #2980b9;
+    color: var(--color-fuchsia); 
 }
 
 .post__action-button svg {

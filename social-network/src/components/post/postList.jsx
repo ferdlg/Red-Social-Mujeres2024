@@ -3,39 +3,56 @@ import { useSelector, useDispatch } from "react-redux";
 import { ACTIONSPOST } from "../../redux/slice/posts/types.js";
 import Post from "./Post.jsx";
 import { thunks } from "../../redux/slice/posts/thunk.js";
-import PostInput from "./PostInput.jsx";
+import { Pagination } from "../pagination/pagination.jsx";
 
-const PostList = () => {
+const PostList = ()=>{
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postsPage] = useState(15);
+
     const dispatch = useDispatch();
     const posts = useSelector((state) => state.post.posts);
-    const [localPosts, setLocalPosts] = useState(posts);
 
-    useEffect(() => {
+    const lastPost = currentPage * postsPage;
+    const firstPost = lastPost - postsPage;
+    const paginationPost = posts.slice(firstPost, lastPost);
+
+    const handlePrevious =()=>{
+        if(currentPage > 1){
+            setCurrentPage(currentPage - 1);
+        }
+    }
+    
+    const handleNext =()=>{
+        if(lastPost < posts.length){
+            setCurrentPage(currentPage + 1);
+        }
+    }
+
+    useEffect(()=>{
         dispatch(thunks[ACTIONSPOST.FETCH_POST]());
     }, [dispatch]);
 
-    useEffect(() => {
-        setLocalPosts(posts);
-    }, [posts]);
-
-    const handleAddPost = (content) => {
-        const newPost = {
-            id: localPosts.length + 1,
-            userId: 1,
-            title: "Nuevo Post",
-            body: content,
-        };
-        setLocalPosts((prevPosts) => [...prevPosts, newPost]);
-    };
-
-    return (
-        <div className="layout__main">
-            <PostInput onAddPost={handleAddPost} />
-            <div className="posts-container">
-                {localPosts.map((post) => (
-                    <Post key={post.id} post={post} />
+    return(
+        <div className="post__list">
+            <div className="post__list-item">
+                {paginationPost.map(post =>(
+                    <Post
+                    key = {post.id}
+                    id = {post.id}
+                    userId = {post.userId}
+                    title = {post.title}
+                    body = {post.body}
+                    likes = {Math.floor(Math.random()*(500 - 100)+100)}
+                    shares = {Math.floor(Math.random()*(1000 - 100)+1000)}
+                    />
                 ))}
             </div>
+        <Pagination
+            handlePrevious = {handlePrevious}
+            handleNext = {handleNext}
+            currentPage = {currentPage}
+            pages = {Math.ceil(posts.length/postsPage)}
+        />
         </div>
     );
 };

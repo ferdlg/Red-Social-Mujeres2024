@@ -1,0 +1,21 @@
+.pagination__post{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.pagination__post-button{
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    border: 2px solid var(--color-blue-dark);
+    background-color: #ffffff;
+    color: var(--color-blue-dark);
+    box-shadow: -0.1rem 0.1rem  0.2rem var(--color-blue-dark);
+}
+.pagination__post-button:hover{
+    padding: 0.6rem;
+    border-radius: 1rem;
+    border: 2px solid white;
+    background-color:var(--color-fuchsia);
+    color:white;
+    box-shadow: -0.1rem 0.1rem  0.2rem var(--color-fuchsia);
+}
