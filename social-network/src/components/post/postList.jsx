@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { ACTIONSPOST } from "../../redux/slice/posts/types.js";
-import Post from "./Post.jsx";
+import Post from "./post.jsx";
 import { thunks } from "../../redux/slice/posts/thunk.js";
 import { Pagination } from "../pagination/pagination.jsx";
 
